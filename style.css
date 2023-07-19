@@ -1,0 +1,30 @@
+body {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+
+img {
+    height: 100px;
+    transition: 0.08s ease-out;
+}
+
+p {
+    transform: translate(0px, 75px);
+    color: white;
+    position: absolute;
+}
+
+div {
+    animation: sime 10s infinite ease-in-out;
+    animation-direction: alternate;
+    transition: 1s;
+}
+
+@keyframes sime {
+    0% {padding-bottom: 0px; transform: scale(1);}
+    100% {padding-bottom: 10px; transform: scale(0.85);}
+}
